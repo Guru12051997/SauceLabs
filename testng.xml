@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Saucelabs Automation suite">
+	<test thread-count="5" name="SauceTest chrome">
+		<parameter name="browser" value="chrome"></parameter>
+			<parameter name="version" value="latest"></parameter>
+		<parameter name="platform" value="Windows 10"></parameter>
+		<classes>
+			<class name="com.qa.base.OpenCart" />
+
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test thread-count="5" name="SauceTest firefox">
+		<parameter name="browser" value="firefox"></parameter>
+			<parameter name="version" value="107"></parameter>
+		<parameter name="platform" value="macOs 10.15"></parameter>
+		<classes>
+			<class name="com.qa.base.OpenCart" />
+
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

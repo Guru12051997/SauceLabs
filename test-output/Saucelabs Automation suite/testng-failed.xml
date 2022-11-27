@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Saucelabs Automation suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SauceTest chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="latest"/>
+    <parameter name="platform" value="Windows 10"/>
+    <classes>
+      <class name="com.qa.base.OpenCart">
+        <methods>
+          <include name="checkPageTitle"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.base.OpenCart -->
+    </classes>
+  </test> <!-- SauceTest chrome(failed) -->
+  <test thread-count="5" name="SauceTest firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="107"/>
+    <parameter name="platform" value="macOs 10.15"/>
+    <classes>
+      <class name="com.qa.base.OpenCart">
+        <methods>
+          <include name="checkPageTitle"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.base.OpenCart -->
+    </classes>
+  </test> <!-- SauceTest firefox(failed) -->
+</suite> <!-- Failed suite [Saucelabs Automation suite] -->
